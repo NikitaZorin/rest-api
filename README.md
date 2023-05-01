@@ -73,11 +73,12 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 Nest is [MIT licensed](LICENSE).
 
 
-API Documentation - http://localhost:5000/api/docs.
+ ## [API Documentation](http://localhost:5000/api/docs).
 
-Creds: 
+ ## Creds: 
 -Create file .development.env for dev and .production.env. 
 Example data: 
+```
 PORT: 7000
 POSTGRES_HOST=localhost
 POSTGRES_USER=postgres
@@ -85,9 +86,10 @@ POSTGRES_DB=users-posts
 POSTGRES_PASSWORD=password
 POSTGRES_PORT=5432
 PRIVATE_KEY=test_secret
+```
 
-Auth:
+## Auth:
 -A JWT token is used for authorization. When registering or logging in, the user will be issued a token, which must be passed in the Authorization header when making requests to the API.
 
-User Roles:
+## User Roles:
 -Users have two roles: user and administrator. The role allows the user to create, create, delete and delete only messages and data about themselves. The administrator role allows you to do all CRUD operations with messages and data of all users.
